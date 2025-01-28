@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakso mercn meletupz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Oswald:wght@200..700&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body{
+        background-color:#781923;
+        font-family: "Fjalla One", serif;
+        font-weight: 400;
+    }
+    .container{
+        height: 700px;
+        background:none;      
+
+        
+    }
+    .header{
+        background-color:#781923;
+        border-radius: 6px;
+        height: 70px;
+        box-shadow: 4px 10px 20px rgb(99, 29, 29) ;
+        width: 100%;
+        position: fixed;
+
+    }
+    .header ul{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 20px;
+        height: 100%;
+        margin-right: 40px;
+    }
+    .header ul li{
+        list-style: none;
+        padding: 6px 12px;
+
+    }
+    .header ul li a{
+        text-decoration: none;
+        color: rgb(133, 158, 158);
+        text-shadow: 2px 2px 5px black;
+        
+    }
+    .hero h2{
+        text-align: center;
+        font-size: 50px;
+        color: rgb(133, 158, 158);
+        text-shadow: 2px 2px 5px black;
+    }
+    .hero h1{
+        text-align: center;
+        margin-top: 100px;
+        color: rgb(133, 158, 158);
+        text-shadow: 2px 2px 5px black;
+    }
+    .hero h2 span{
+        color: red;
+        font-family: "Fjalla One", serif;
+    }
+    .hero h3{
+        text-align: center;
+        color: rgb(133, 158, 158);
+        text-shadow: 2px 2px 5px black;
+       
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        
+    }
+
+    .img-container { 
+        margin: 0 auto;
+        height: 300px;
+        background:none;    
+    }
+    .img-container img{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .hero a{
+        text-decoration: none;
+        color: rgb(20, 207, 207);
+        padding: 10px 20px;
+        width: max-content;
+        border: 3px solid black;
+        border-radius: 15px;
+        margin: 0 auto;
+        transition: 0.5s;
+    }
+
+    .hero a:hover{
+        background-color: rgb(196, 29, 0);
+    }
+    .kotakan{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        background-color: rgb(141, 188, 132);
+        height: 500px;
+
+    }
+    .testi{
+        background-color: rgb(223, 209, 209);
+        display: flex;
+        flex-direction:column;
+        width: 500px;
+        height: 300px;
+        border: 3px solid ;
+        border-radius: 15px;
+        transition: 0.4s ease-out;
+    }
+
+    .testi:nth-child(odd) {
+        margin-left: 20px;
+    }
+
+    .testi:hover{
+        box-shadow: 2px 10px 3px;
+        margin-top: -10px ;
+    }
+    .testi .profil{
+        margin-top: 25px;
+        margin-left: 10px;
+        width: 60px;
+        height: 60px;
+        border: 3px solid;
+        border-radius:50% ;
+    }
+    .testi h2{
+        padding-left: 10px;
+        width:max-content;
+    }
+    .testi p{
+        padding-left: 10px;
+        width:max-content;
+
+    }
+    .testi img{
+        height:60px;
+        width: 64px;
+        padding: 5px;
+        padding-right: 400px;
+    }
+    .bawahan{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height:550px;
+        background-color: rgb(255, 208, 208);
+
+
+    }
+    .footer{
+        height: 100px;
+        background-color: #e8dfdf;
+        box-shadow: 10px 15px 20px black;
+        
+       
+    }
+    iframe{
+        margin: 0 auto;
+        border-radius: 30px;
+        border: 3px solid;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .bawahan button{
+        background-color: rgb(31, 161, 241);
+        border-radius: 10px;
+        border: 3px solid;
+        height: 50px;
+        margin: 0 auto;
+        width: 150px;
+        transition: 0.5s;
+    }
+    .bawahan button:active{
+            background-color: #38733b; /* Warna lebih gelap */
+            transform: scale(0.95); /* Efek mengecil */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset; /* Efek bayangan */
+    }
+    .bawahan button:hover{
+        background-color:rgb(21, 105, 158); ;
+    }
+    button a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+    .footer li{
+        list-style: none;
+    }
+    .footer li i{
+        font-size: 30px;
+        color: black;
+
+    }
+    .footer ul{
+        display: flex;
+        justify-content:end;
+        align-items: center;
+        padding: 30px;
+        gap: 20px;
+       
+    }
+    .header ul li:nth-child(5){
+        padding: 10px 19px;
+        border: 3px solid;
+        border-radius: 10px;
+        background-color: rgb(209, 88, 23);
+        transition: 0.6s;
+    }
+    .header ul li:nth-child(5):hover{
+        background-color: rgb(202, 44, 0);
+    }
+    .header ul li:nth-child(5) a {
+        color:rgb(226, 227, 232);
+        text-shadow: 2px 2px 3px black;
+
+    }
+    .about{
+        display: flex;
+        align-items:center ;
+        gap: 20px;
+        width: 100%;
+        margin-top: 330px;
+        border: 5px solid;
+        padding-top: 100px;
+        height: 400px;
+        background-color: #D2665A;
+    }
+    .about img{
+        padding-top: 40px;
+        height: 360px;
+        
+    }
+    .about p{
+        color: rgb(226, 217, 217);
+        text-shadow: 2px 2px 2px black;
+        font-size: 35px;
+        text-align: end;
+        font-family: "Oswald", serif;  
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        padding-right: 20px;
+    }
+    .about p span{
+        font-family: "Bebas Neue", serif;
+        font-weight: 500;
+        color: rgb(218, 15, 15);
+        text-shadow: 2px 2px 2px black;  
+
+    }
+    @media screen and (max-width: 768px) {
+        .about p {
+            font-size: 22px;
+            padding: 10px;
+            text-align: end;
+        }
+        .about img{
+            margin-top: 160px;
+            height: 200px;
+        }
+        .about{
+            padding-top: 10px;
+        }
+    }
+
+
+
+</style>
+<body>
+    <div class="container"  id="menu" >
+        <div class="header">
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#deskripsi">About</a></li>
+                <li><a href="#lokasi">Lokasi</a></li>
+                <li><a href="#testimoni">Testimoni</a></li>
+                <li><a href="#contact">Contact US</a></li>
+            </ul>
+            
+        </div>
+        <div class="hero">
+            <h1>Selamat Datang di web kami</h1>
+            <h2>Bakso <span>Mercon Meletupz</span></h2>
+                <h3>"Bakso mercon meletupz, pedasnya bikin heboh, rasanya bikin ketagihan!"</h3>
+                <div class="img-container">
+                    <img src="logo.png.png" alt="">
+                </div>
+                <a href="https://wa.me/6288809847754?text=Hai kak!apakah%20bakso%20nya%20masih%20ada??">Order Now!</a>
+                </div>
+                <div class="about" id=deskripsi>
+                    <img src="BAKSOMANTAP-remove-bg-io.png" alt="">
+                    <p>"Experience the ultimates <span> 'Extra Meaty'</span> sensation with our explosive <span>Bakso Mercon! </span>Each juicy meatball is packed with rich, tender beef and stuffed with fiery chili that bursts in your mouth like a flavor explosion. It's not just a snack—it's a challenge for spice lovers and a meaty indulgence for anyone craving bold, intense flavors. Bite into the perfect balance of tender meat and molten chili heat. Are you ready to take on the meaty, spicy adventure?"</p>
+                </div>
+                <div class="kotakan" id="testimoni">
+                    <div class="testi"><img src="Usernew-removebg-preview.png" alt=""><h2>Raihan Pratama ilham</h2>
+                    <p>MANTAP!Pedas nya nendang di lidah auto beli lagi</p></div>
+                    <div class="testi"><img src="Usernew-removebg-preview.png" alt=""><h2>Zaki Fakhriza Rahman</h2>
+                    <p>Good job!</p></div>
+                    <div class="testi"><img src="Usernew-removebg-preview.png" alt=""><h2>Repa</h2>
+                    <p>Pedes nya pas sesuai apa yang gua mau!!</p></div>
+                </div>  
+                <div class="bawahan" id="lokasi">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d247.81647762534024!2d107.46577938109385!3d-6.385788298697501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1737623867394!5m2!1sen!2sid" width="500" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>         
+                    <button> <a href="https://www.google.com/maps/place//@-6.3858676,107.4640645,17z/data=!4m6!1m5!3m4!2zNsKwMjMnMDguNSJTIDEwN8KwMjcnNTguMiJF!8m2!3d-6.385697!4d107.466162?entry=ttu&g_ep=EgoyMDI1MDEyMS4wIKXMDSoASAFQAw%3D%3D">Location</a></button>
+                </div>
+                    <div class="footer" id="contact">
+                        <ul>CONTACT PERSON :    
+                            <li><a href="https://www.instagram.com/merconrpl2/"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="https://wa.me/6288809847754?text=Hai kak!apakah%20bakso%20nya%20masih%20ada??"><i class="bi bi-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
+                        </ul>
+                    </div>
+    </div>
+
+            
+</body>
+</html> 
