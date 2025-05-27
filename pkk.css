@@ -1,0 +1,732 @@
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: rgb(245, 39, 39);
+        font-family: "Fjalla One", serif;
+        font-weight: 400;
+    }
+
+    .kontainer {
+        width: 100%;
+        background-color: #383a69;
+        background: none;
+
+
+    }
+    .keranjangside{
+        text-align: center;
+        position: fixed;
+        left: 170px;
+        width: 500px;
+        z-index: 200;
+    }
+    .isiankeranjangside .x{
+        position: absolute;
+        border: 2px solid;
+        padding: 10px;
+        border-radius: 3px;
+        width: 15px;
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+    .keranjangside h1{
+        padding: 10px;
+    }
+    .keranjangside h3{
+        padding: 10px;
+    }
+    .isiankeranjangside{
+        margin: 10px;
+        height: 250px;
+        border: 2px solid;
+        background-color: rgb(227, 217, 204);
+        border-radius: 10px;
+    }
+
+    .header {
+        background-color: #DB5A19;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 6px;
+        box-shadow: 4px 10px 20px rgb(180, 28, 28);
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        border-radius: 10px;
+    }
+
+    .header ul {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 20px;
+        margin-right: 10px;
+
+    }
+
+    .header img {
+        padding: 10px;
+
+
+    }
+
+    .header ul li {
+        list-style: none;
+        padding: 6px 12px;
+
+    }
+
+    .header ul li a {
+        text-decoration: none;
+        font-size: 17px;
+        color: rgb(133, 158, 158);
+        text-shadow: 2px 2px 5px black;
+
+    }
+
+    .hero {
+        background-color: #DB5A19;
+    }
+
+    .menu1 {
+        height: 100vh;
+        color: rgb(233, 223, 223);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 50px;
+    }
+    .isian-img2 img{
+        padding-right: 20px;
+        transition: 1s;
+    }
+    .isian-img2 img:hover{
+        transform: rotate(15deg);
+        scale: 1.4;
+        
+    }
+    
+
+    .isian-hero h1 {
+        padding-left: 50px;
+        padding: 5px;
+        font-size: 70px;
+        font-weight: bold;
+        text-align: start;
+        color: rgb(206, 195, 195);
+        text-shadow: 2px 2px 5px black;
+        animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+        overflow: hidden;
+        /* Menyembunyikan teks yang belum ditampilkan */
+        border-right: 0.15em solid orange;
+        /* Efek kursor */
+        white-space: nowrap;
+        /* Mencegah teks berpindah ke baris baru */
+    }
+
+    @keyframes typing {
+        from {
+            width: 0
+        }
+
+        to {
+            width: 100%
+        }
+    }
+
+    @keyframes blink-caret {
+
+        from,
+        to {
+            border-color: transparent
+        }
+
+        50% {
+            border-color: rgb(176, 170, 157);
+        }
+    }
+
+    .isian-hero h2 {
+        padding-left: 50px;
+        padding: 5px;
+        font-size: 60px;
+        font-weight: bold;
+        text-align: start;
+        color: rgb(233, 223, 223);
+        text-shadow: 2px 2px 5px black;
+        display: inline-block;
+        animation: explode 2s ease-out forwards;
+        transform-origin: center;
+        opacity: 0;
+
+    }
+
+    @keyframes explode {
+        0% {
+            transform: scale(0) rotate(0deg);
+            opacity: 0;
+        }
+
+        50% {
+            transform: scale(1.2);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    .isian-hero h3 {
+        padding-left: 50px;
+        font-size: 30px;
+        padding: 3px;
+        font-weight: 900;
+        text-align: start;
+        color: rgb(233, 223, 223);
+        text-shadow: 2px 2px 5px black;
+    }
+
+    .isian-hero .button {
+        display: flex;
+        justify-content: start;
+        align-items: end;
+        gap: 30px;
+    }
+
+    .button button {
+        margin-top: 20px;
+        font-size: 20px;
+        background-color: rgb(196, 142, 42);
+        font-weight: 700;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        border: 3px solid black;
+        border-radius: 10px;
+        transition: 0.5s;
+        height: 60px;
+        width: 150px;
+    }
+
+    .button button:hover {
+        background-color: rgb(196, 29, 0);
+    }
+
+    .product-card {
+        max-width: 430px;
+        height: max-content;
+        margin: auto;
+        padding: 16px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        background-color: #fff;
+    }
+
+    .heroclass {
+        padding: 100px;
+        background-color: #DB5A19;
+    }
+    .product-card{
+        transition: 1s;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: 400px;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .product-card .price {
+        color: #888;
+        font-size: 18px;
+        margin: 8px 0;
+    }
+
+    .product-card button {
+        background-color: #000;
+        color: #fff;
+        border: none;
+        padding: 12px;
+        width: 100%;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+
+    .product-card button:hover {
+        background-color: #444;
+    }
+    .product-card:hover{
+        scale: 1.1;
+    }
+
+
+    .kotakan {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        background-color: #DB5A19;
+        height: 500px;
+
+    }
+
+
+    .testi {
+        background-color: rgb(220, 205, 205);
+        display: flex;
+        width: 500px;
+        height: 200px;
+        border: 3px solid;
+        border-radius: 15px;
+        transition: 0.4s ease-out;
+    }
+
+    .testi:nth-child(4) {
+        margin-left: 100px;
+        padding: 0;
+        padding: 5px;
+    }
+
+    .testi:hover {
+        box-shadow: 2px 10px 3px;
+        margin-top: -10px;
+    }
+
+    .testi .profil {
+        margin-top: 25px;
+        margin-left: 10px;
+        width: 60px;
+        height: 60px;
+        border: 3px solid;
+        border-radius: 50%;
+    }
+
+    .testi h2 {
+        padding-top: 35px;
+
+
+    }
+
+    .testi p {
+        font-size: medium;
+        text-align: start;
+
+
+    }
+
+    .h1-testimoni {
+        background-color: #DB5A19;
+        padding: 50px;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .testi img {
+        height: 60px;
+        width: 64px;
+        padding: 15px;
+
+    }
+
+    .bawahan {
+        padding-top: 400px;
+        height: 550px;
+        padding-bottom: 200px;
+        background-color: #be4c12;
+
+
+    }
+    .isian-bawahan{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    iframe {
+        margin: 0 auto;
+        border: 3px solid;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 1670px;
+        height: 500px;
+    }
+
+    .bawahan button {
+        background-color: rgb(31, 161, 241);
+        border-radius: 10px;
+        border: 3px solid;
+        height: 70px;
+        margin: 0 auto;
+        width: 180px;
+        transition: 0.5s;
+        margin: 30px;
+    }
+
+    .bawahan button:active {
+        background-color: #38733b;
+        /* Warna lebih gelap */
+        transform: scale(0.95);
+        /* Efek mengecil */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset;
+        /* Efek bayangan */
+    }
+
+    .bawahan button:hover {
+        background-color: rgb(21, 105, 158);
+        ;
+    }
+
+    button a {
+        text-decoration: none;
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    .header ul li:nth-child(5) {
+        padding: 10px 19px;
+        border: 3px solid;
+        border-radius: 10px;
+        background-color: rgb(209, 88, 23);
+        transition: 0.6s;
+    }
+
+    .header ul li:nth-child(5):hover {
+        background-color: rgb(202, 44, 0);
+    }
+
+    .header ul li:nth-child(5) a {
+        color: rgb(226, 227, 232);
+        text-shadow: 2px 2px 3px black;
+
+    }
+
+    .about {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-top: 100px;
+        border: 5px solid;
+        padding-top: 100px;
+        height: 400px;
+        background-color: #a74210;
+    }
+
+    .about img {
+        padding-top: 40px;
+        height: 360px;
+
+    }
+
+
+    .about p {
+        color: rgb(226, 217, 217);
+        text-shadow: 2px 2px 2px black;
+        font-size: 35px;
+        text-align: end;
+        font-family: "Oswald", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        padding-right: 20px;
+    }
+
+    .about p span {
+        font-family: "Bebas Neue", serif;
+        font-weight: 500;
+        color: rgb(218, 15, 15);
+        text-shadow: 2px 2px 2px black;
+
+    }
+
+    .sembunyikan {
+        padding: 5px;
+        background: none;
+        position: absolute;
+        top: 5rem;
+        height: 100vh;
+        width: 1680px;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    .sembunyikan2 {
+        left: 450px;
+        position: fixed;
+        height: 650px;
+        width: 800px;
+       background-color: #be4c12;
+        border-radius: 15px;
+        border: 5px solid black;
+    }
+
+    .sembunyikan2 img {
+        width: 900px;
+        height: 400px;
+        margin: 10px;
+        border-radius: 20px;
+        border: 5px solid black;
+    }
+
+    .date li {
+        list-style: none;
+        gap: 20px;
+        margin: 10px;
+
+    }
+
+    .date ul li input {
+        height: 30px;
+        border: 3px solid black;
+        width: 280px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    .isiangambar-about {
+        display: flex;
+
+    }
+
+    .isiangambar-about .h1-pemesanan {
+        font-stretch: normal;
+        padding: 20px 30px;
+    }
+    .isiangambar-about .h1-pemesanan h1 {
+        font-stretch: normal;
+        text-align: center;
+    }
+
+    .isiangambar-about .h1-pemesanan p {
+        font-size: 20px;
+        padding: 30px;
+        text-align: justify;
+
+    }
+    .date a{
+        text-decoration: none;
+    }
+
+    .isiangambar-about .h1-pemesanan hr {
+        background-color: black;
+    }
+    .isiangambar-about img{
+        height: 400px;
+        width: 300px;
+    }
+
+    .date {
+        display: flex;
+    }
+
+    .date a {
+        margin-top: 30px;
+        padding: 2 0px;
+        font-size: larger;
+        font-weight: 700;
+
+    }
+    .pesan-keranjang{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        gap: 20px;
+    }
+    .pesan-keranjang a{
+        padding:  10px 15px;
+        border: 3px solid black;
+        border-radius: 10px;
+        color: black;
+        background-color: rgb(140, 109, 15);
+    }
+    .isian-pemesanan{
+        width: 450px;
+    }
+    .isian-pemesanan h2{
+        text-align: center;
+        padding: 30px;
+        font-size: 50px;
+    }
+    .isian-pemesanan p{
+        text-align: justify;
+        padding: 10px;
+        font-size: 20px;
+
+    }
+    .isian-pemesanan h3{
+        padding-top: 30px;
+        font-size: 30px;
+        text-align: center;
+    
+    }
+
+
+    .pesenan {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .pesenan input {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        text-align: center;
+        border: 4px solid black;
+        border-radius: 5px;
+        background-color: #ede8e7;
+    }
+
+    .hasil button {
+        height: 45px;
+        width: 45px;
+        font-size: 30px;
+        border: 4px solid black;
+        border-radius: 5px;
+        background-color: rgb(255, 34, 0);
+    }
+
+    .hasil2 button {
+        height: 45px;
+        width: 45px;
+        font-size: 30px;
+        border: 4px solid black;
+        border-radius: 5px;
+        background-color: rgb(4, 158, 4);
+    }
+
+    .isiangambar-about p span:nth-of-type(2) {
+        color: #38733b;
+        margin: 0 auto;
+        font-size: 30px;
+    }
+
+    .exit button {
+        border: 4px solid black;
+        border-radius: 5px;
+        margin: 5px;
+        background-color: rgb(147, 9, 9);
+        height: 40px;
+        width: 40px;
+        font-size: 30px;
+    }
+
+    .diskon {
+        display: flex;
+        gap: 20px;
+        margin-left: 30px;
+    }
+
+
+    .footer {
+        padding: 10px;
+        height: 300px;
+        display: flex;
+        justify-content: space-around;
+        background: linear-gradient(to bottom , #be4c12,black);
+    }
+    .socialmedia{
+     height: 200px;  
+     
+    }
+
+    .footer a {
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+        font-family: "Libre Franklin", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    }
+
+    @media screen and (max-width: 768px) {
+        .about p {
+            font-size: 20px;
+            padding: 10px;
+            text-align: end;
+        }
+
+        .about img {
+            margin-top: 160px;
+            height: 200px;
+        }
+
+        .about {
+            padding-top: 10px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .about {
+            width: 536px;
+            margin-top: 700px;
+        }
+
+        .about p {
+            font-size: 20px;
+            width: 510px;
+            text-align: justify;
+            margin-right: 200px;
+            position: absolute;
+        }
+
+        .about img {
+            height: 350px;
+            padding-bottom: 150px;
+        }
+
+        .container {
+            width: 550px;
+        }
+
+        .kotakan {
+            width: 510px;
+        }
+
+        .testi {
+            width: 380px;
+            height: 120px;
+
+        }
+
+        .testi h2 {
+            font-size: 15px;
+        }
+
+        .testi img {
+            height: 40px;
+            width: 44px;
+        }
+
+        .bawahan {
+            width: 550px;
+        }
+
+        iframe {
+            width: 350px;
+            height: 250px;
+        }
+
+    }
